@@ -10,17 +10,6 @@
   },
   "plugins": [
     {
-      "name": "migracion-cnf",
-      "description": "Agentes y skills del dominio SDLC: migracion y validacion de contratos.",
-      "version": "0.1.0",
-      "source": {
-        "source": "github",
-        "repo": "Banca-Copilot-demo/agentes-sdlc",
-        "ref": "v0.1.0",
-        "sha": "205adb5e3d73ad1de9bd7a2519c6714c891f660e"
-      }
-    },
-    {
       "name": "plataforma-agentico",
       "description": "Asistente de autoria de artefactos conformes al estandar.",
       "version": "0.1.0",
@@ -29,6 +18,30 @@
         "repo": "Banca-Copilot-demo/estandar-agentico",
         "ref": "main",
         "sha": "7901cdf56356d59e0ff88d8be79d1f02db883066"
+      }
+    },
+    {
+      "name": "contratos",
+      "description": "Validacion de contratos OpenAPI del dominio SDLC.",
+      "version": "0.1.0",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Banca-Copilot-demo/agentes-sdlc.git",
+        "path": "plugins/contratos",
+        "ref": "main",
+        "sha": "b162b19f8403d1bab8221e0f23d1b8b23e9dfb9d"
+      }
+    },
+    {
+      "name": "migracion",
+      "description": "Planificacion y ejecucion de migraciones de plataforma del dominio SDLC.",
+      "version": "0.1.0",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Banca-Copilot-demo/agentes-sdlc.git",
+        "path": "plugins/migracion",
+        "ref": "main",
+        "sha": "b162b19f8403d1bab8221e0f23d1b8b23e9dfb9d"
       }
     }
   ]
