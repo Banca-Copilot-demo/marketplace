@@ -1,0 +1,49 @@
+name: Regenerar el indice
+
+# El indice SE RECONSTRUYE A SI MISMO. Ningun repositorio de dominio escribe aqui: solo avisa.
+# Es lo que permite que el equipo de un dominio publique sin tener permiso sobre el catalogo del
+# que dependen todos los demas.
+#
+# TRES DISPARADORES, y cada uno cubre el fallo del anterior:
+#   repository_dispatch -> lo normal: el dominio acaba de publicar y el indice se pone al dia ya
+#   schedule            -> la red de seguridad: si el aviso se perdio -o el dominio no tenia token
+#                          para avisar-, el indice se pone al dia igual dentro del dia
+#   workflow_dispatch   -> a mano, para poder reindexar sin esperar ni fabricar un release
+on:
+  repository_dispatch:
+    types: [version-publicada]
+  schedule:
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+
+# `contents: write` porque el propio workflow commitea el catalogo regenerado. Es el UNICO permiso
+# de escritura de todo el flujo del indice.
+permissions:
+  contents: write
+
+concurrency:
+  # Dos regeneraciones a la vez se pisarian el commit. La ultima gana, sin cancelar la que corre:
+  # abortar a mitad podria dejar el catalogo escrito y sin commitear.
+  group: indice
+  cancel-in-progress: false
+
+jobs:
+  regenerar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar el repositorio del indice
+        uses: actions/checkout@v4
+
+      - name: Reconstruir el catalogo con lo que tenga atestacion verificada
+        uses: Banca-Copilot-demo/estandar-agentico/.github/actions/indexar@main
+        with:
+          organizacion: Banca-Copilot-demo
+          # Sin este token no se ven los releases ni las atestaciones de los dominios privados: el
+          # GITHUB_TOKEN de este repositorio esta acotado a este repositorio.
+          token: ${{ secrets.TOKEN_LECTURA_DOMINIOS || github.token }}
+
+      - name: De donde vino el aviso
+        if: github.event_name == 'repository_dispatch'
+        run: |
+          echo "Aviso de ${{ github.event.client_payload.repositorio }} " \
+               "por la etiqueta ${{ github.event.client_payload.etiqueta }}" >> "$GITHUB_STEP_SUMMARY"

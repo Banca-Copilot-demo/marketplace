@@ -1,0 +1,35 @@
+{
+  "name": "agentico",
+  "owner": {
+    "name": "Plataforma Agentica (demo)",
+    "email": "plataforma-agentica@ejemplo.dev"
+  },
+  "metadata": {
+    "description": "Indice de plugins agenticos de la organizacion. GENERADO por el workflow: no editar a mano.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "migracion-cnf",
+      "description": "Agentes y skills del dominio SDLC: migracion y validacion de contratos.",
+      "version": "0.1.0",
+      "source": {
+        "source": "github",
+        "repo": "Banca-Copilot-demo/agentes-sdlc",
+        "ref": "v0.1.0",
+        "sha": "205adb5e3d73ad1de9bd7a2519c6714c891f660e"
+      }
+    },
+    {
+      "name": "plataforma-agentico",
+      "description": "Asistente de autoria de artefactos conformes al estandar.",
+      "version": "0.1.0",
+      "source": {
+        "source": "github",
+        "repo": "Banca-Copilot-demo/estandar-agentico",
+        "ref": "main",
+        "sha": "7901cdf56356d59e0ff88d8be79d1f02db883066"
+      }
+    }
+  ]
+}
