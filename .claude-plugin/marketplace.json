@@ -25,8 +25,8 @@
       "description": "Validacion de contratos OpenAPI del dominio SDLC.",
       "version": "0.1.0",
       "source": {
-        "source": "git-subdir",
-        "url": "https://github.com/Banca-Copilot-demo/agentes-sdlc.git",
+        "source": "github",
+        "repo": "Banca-Copilot-demo/agentes-sdlc",
         "path": "plugins/contratos",
         "ref": "main",
         "sha": "b162b19f8403d1bab8221e0f23d1b8b23e9dfb9d"
@@ -37,8 +37,8 @@
       "description": "Planificacion y ejecucion de migraciones de plataforma del dominio SDLC.",
       "version": "0.1.0",
       "source": {
-        "source": "git-subdir",
-        "url": "https://github.com/Banca-Copilot-demo/agentes-sdlc.git",
+        "source": "github",
+        "repo": "Banca-Copilot-demo/agentes-sdlc",
         "path": "plugins/migracion",
         "ref": "main",
         "sha": "b162b19f8403d1bab8221e0f23d1b8b23e9dfb9d"
