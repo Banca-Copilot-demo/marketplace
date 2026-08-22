@@ -5,43 +5,43 @@
     "email": "plataforma-agentica@ejemplo.dev"
   },
   "metadata": {
-    "description": "Indice de plugins agenticos de la organizacion. GENERADO por el workflow: no editar a mano.",
+    "description": "GENERADO por el workflow del indice: no editar a mano.",
     "version": "0.1.0"
   },
   "plugins": [
     {
-      "name": "plataforma-agentico",
-      "description": "Asistente de autoria de artefactos conformes al estandar.",
-      "version": "0.1.0",
-      "source": {
-        "source": "github",
-        "repo": "Banca-Copilot-demo/estandar-agentico",
-        "ref": "main",
-        "sha": "7901cdf56356d59e0ff88d8be79d1f02db883066"
-      }
-    },
-    {
-      "name": "contratos",
+      "name": "demo.sdlc.contratos",
       "description": "Validacion de contratos OpenAPI del dominio SDLC.",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/Banca-Copilot-demo/agentes-sdlc.git",
         "path": "plugins/contratos",
-        "ref": "main",
-        "sha": "b162b19f8403d1bab8221e0f23d1b8b23e9dfb9d"
+        "ref": "demo.sdlc.contratos--v0.1.1",
+        "sha": "10f9a42d5ff4cf32014bdc77943bac3f20f2c4aa"
       }
     },
     {
-      "name": "migracion",
+      "name": "demo.sdlc.migracion",
       "description": "Planificacion y ejecucion de migraciones de plataforma del dominio SDLC.",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/Banca-Copilot-demo/agentes-sdlc.git",
         "path": "plugins/migracion",
-        "ref": "main",
-        "sha": "b162b19f8403d1bab8221e0f23d1b8b23e9dfb9d"
+        "ref": "demo.sdlc.migracion--v0.1.1",
+        "sha": "10f9a42d5ff4cf32014bdc77943bac3f20f2c4aa"
+      }
+    },
+    {
+      "name": "demo.sdlc.migracion-cnf",
+      "description": "Agentes y skills del dominio SDLC: migracion y validacion de contratos.",
+      "version": "0.3.0",
+      "source": {
+        "source": "github",
+        "repo": "Banca-Copilot-demo/agentes-sdlc",
+        "ref": "v0.3.0",
+        "sha": "f7957ea5e9ea9e0b598c69fb26d29e2b243c3359"
       }
     }
   ]
