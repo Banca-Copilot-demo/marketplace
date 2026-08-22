@@ -32,17 +32,6 @@
         "ref": "demo.sdlc.migracion--v0.1.1",
         "sha": "10f9a42d5ff4cf32014bdc77943bac3f20f2c4aa"
       }
-    },
-    {
-      "name": "demo.sdlc.migracion-cnf",
-      "description": "Agentes y skills del dominio SDLC: migracion y validacion de contratos.",
-      "version": "0.3.0",
-      "source": {
-        "source": "github",
-        "repo": "Banca-Copilot-demo/agentes-sdlc",
-        "ref": "v0.3.0",
-        "sha": "f7957ea5e9ea9e0b598c69fb26d29e2b243c3359"
-      }
     }
   ]
 }
