@@ -10,15 +10,27 @@
   },
   "plugins": [
     {
+      "name": "demo.plataforma.agentico",
+      "description": "Plugin de plataforma del Track Agentico: asistente de autoria de artefactos y esqueletos conformes al estandar agentico.",
+      "version": "0.2.0",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Banca-Copilot-demo/estandar-agentico.git",
+        "path": "plugins/asistente-autoria",
+        "ref": "demo.plataforma.agentico--v0.2.0",
+        "sha": "3cbd4fb2a057d7a9bdf8116567a24c149742c63a"
+      }
+    },
+    {
       "name": "demo.sdlc.contratos",
       "description": "Validacion de contratos OpenAPI del dominio SDLC.",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/Banca-Copilot-demo/agentes-sdlc.git",
         "path": "plugins/contratos",
-        "ref": "demo.sdlc.contratos--v0.1.1",
-        "sha": "10f9a42d5ff4cf32014bdc77943bac3f20f2c4aa"
+        "ref": "demo.sdlc.contratos--v0.1.2",
+        "sha": "97660520e4447e75c6ae0208c2f7b872d563e58f"
       }
     },
     {
