@@ -60,13 +60,13 @@
     {
       "name": "demo.sdlc.referencia",
       "description": "Plugin de referencia del dominio SDLC: lleva un artefacto de cada tipo para ejercitar el estandar de punta a punta.",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/Banca-Copilot-demo/agentes-sdlc.git",
         "path": "plugins/referencia",
-        "ref": "demo.sdlc.referencia--v0.1.0",
-        "sha": "c6bdc484c3250b951fe4796c08600c728e629558"
+        "ref": "demo.sdlc.referencia--v0.1.1",
+        "sha": "b0679659a69d4c1642b51de4a9b82b52a22d23ca"
       }
     }
   ]
