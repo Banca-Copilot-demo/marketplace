@@ -48,13 +48,13 @@
     {
       "name": "demo.sdlc.mcp-aws-knowledge",
       "description": "Un solo servidor MCP: la base de conocimiento publica de AWS, de solo lectura. Existe como plugin propio para poder aprobarlo y revocarlo por separado del resto.",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "source": {
         "source": "github",
         "repo": "Banca-Copilot-demo/agentes-sdlc",
         "path": "plugins/mcp-aws-knowledge",
-        "ref": "demo.sdlc.mcp-aws-knowledge--v0.1.0",
-        "sha": "ac08d13a6698d62568659c9214f26f3c10329166"
+        "ref": "demo.sdlc.mcp-aws-knowledge--v0.2.0",
+        "sha": "5e1be424cde15741c86cb7750f0dd2bec7a05451"
       }
     },
     {
