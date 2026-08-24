@@ -23,14 +23,14 @@
     },
     {
       "name": "demo.sdlc.catalogo-datos",
-      "description": "Acceso de lectura al catalogo de datos del dominio SDLC mediante un servidor MCP.",
-      "version": "0.1.0",
+      "description": "Un solo servidor MCP: acceso de lectura al catalogo de datos del dominio SDLC.",
+      "version": "0.2.0",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/Banca-Copilot-demo/agentes-sdlc.git",
         "path": "plugins/catalogo-datos",
-        "ref": "demo.sdlc.catalogo-datos--v0.1.0",
-        "sha": "03a7090c329e037d657510fa22518a0185e0fcf8"
+        "ref": "demo.sdlc.catalogo-datos--v0.2.0",
+        "sha": "ac08d13a6698d62568659c9214f26f3c10329166"
       }
     },
     {
@@ -43,6 +43,18 @@
         "path": "plugins/contratos",
         "ref": "demo.sdlc.contratos--v0.1.2",
         "sha": "97660520e4447e75c6ae0208c2f7b872d563e58f"
+      }
+    },
+    {
+      "name": "demo.sdlc.mcp-aws-knowledge",
+      "description": "Un solo servidor MCP: la base de conocimiento publica de AWS, de solo lectura. Existe como plugin propio para poder aprobarlo y revocarlo por separado del resto.",
+      "version": "0.1.0",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Banca-Copilot-demo/agentes-sdlc.git",
+        "path": "plugins/mcp-aws-knowledge",
+        "ref": "demo.sdlc.mcp-aws-knowledge--v0.1.0",
+        "sha": "ac08d13a6698d62568659c9214f26f3c10329166"
       }
     },
     {
