@@ -60,13 +60,13 @@
     {
       "name": "demo.sdlc.migracion",
       "description": "Planificacion y ejecucion de migraciones de plataforma del dominio SDLC.",
-      "version": "0.1.1",
+      "version": "0.1.3",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/Banca-Copilot-demo/agentes-sdlc.git",
         "path": "plugins/migracion",
-        "ref": "demo.sdlc.migracion--v0.1.1",
-        "sha": "10f9a42d5ff4cf32014bdc77943bac3f20f2c4aa"
+        "ref": "demo.sdlc.migracion--v0.1.3",
+        "sha": "f8151e8094c22ae55c455469d2144fbfa4ec3784"
       }
     },
     {
