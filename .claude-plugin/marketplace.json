@@ -36,13 +36,13 @@
     {
       "name": "demo.sdlc.contratos",
       "description": "Validacion de contratos OpenAPI del dominio SDLC.",
-      "version": "0.1.2",
+      "version": "0.2.2",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/Banca-Copilot-demo/agentes-sdlc.git",
         "path": "plugins/contratos",
-        "ref": "demo.sdlc.contratos--v0.1.2",
-        "sha": "97660520e4447e75c6ae0208c2f7b872d563e58f"
+        "ref": "demo.sdlc.contratos--v0.2.2",
+        "sha": "b39c31b29c326f590aa9547a27662278e7abed11"
       }
     },
     {
