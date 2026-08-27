@@ -1,7 +1,7 @@
 name: Regenerar el indice
 
 # El indice SE RECONSTRUYE A SI MISMO. Ningun repositorio de dominio escribe aqui: solo avisa.
-# Es lo que permite que el equipo de un dominio publique sin tener permiso sobre el catalogo del
+# Es lo que permite que el equipo de un dominio publique sin tener permiso sobre el marketplace del
 # que dependen todos los demas.
 #
 # TRES DISPARADORES, y cada uno cubre el fallo del anterior:
@@ -16,14 +16,14 @@ on:
     - cron: "17 6 * * *"
   workflow_dispatch:
 
-# `contents: write` porque el propio workflow commitea el catalogo regenerado. Es el UNICO permiso
+# `contents: write` porque el propio workflow commitea el marketplace regenerado. Es el UNICO permiso
 # de escritura de todo el flujo del indice.
 permissions:
   contents: write
 
 concurrency:
   # Dos regeneraciones a la vez se pisarian el commit. La ultima gana, sin cancelar la que corre:
-  # abortar a mitad podria dejar el catalogo escrito y sin commitear.
+  # abortar a mitad podria dejar el marketplace escrito y sin commitear.
   group: indice
   cancel-in-progress: false
 
@@ -34,7 +34,7 @@ jobs:
       - name: Descargar el repositorio del indice
         uses: actions/checkout@v4
 
-      - name: Reconstruir el catalogo con lo que tenga atestacion verificada
+      - name: Reconstruir el marketplace con lo que tenga atestacion verificada
         uses: Banca-Copilot-demo/estandar-agentico/.github/actions/indexar@main
         with:
           organizacion: Banca-Copilot-demo
