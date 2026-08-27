@@ -84,13 +84,13 @@
     {
       "name": "demo.sdlc.revisar-jql",
       "description": "Revisa una consulta JQL de Jira y senala los filtros que faltan, las proyecciones excesivas y las clausulas que degradan el rendimiento.",
-      "version": "0.1.2",
+      "version": "0.1.3",
       "source": {
         "source": "github",
         "repo": "Banca-Copilot-demo/agentes-sdlc",
         "path": "skills/revisar-jql",
-        "ref": "demo.sdlc.revisar-jql--v0.1.2",
-        "sha": "d36a8e758e83c008435d78392fd3653095a702c1"
+        "ref": "demo.sdlc.revisar-jql--v0.1.3",
+        "sha": "1508a9dee19ab2917a54533c9671ad3dbbcc0608"
       }
     }
   ]
